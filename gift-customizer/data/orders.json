@@ -1,0 +1,91 @@
+[
+  {
+    "id": "ORD-739201",
+    "user_id": "usr_demo_002",
+    "customer_name": "Sarah Jenkins",
+    "customer_email": "sarah@example.com",
+    "customer_phone": "+1 (555) 234-5678",
+    "shipping_address": "742 Evergreen Terrace, Springfield, OR 97477",
+    "status": "in_production",
+    "status_label": "In Production",
+    "tracking_number": "TRK-9832104-US",
+    "carrier": "FedEx Express Custom",
+    "estimated_delivery": "Oct 08, 2026",
+    "created_at": "2026-10-03 14:15:00",
+    "updated_at": "2026-10-04 09:30:00",
+    "payment_method": "Credit Card (Visa ending in 4242)",
+    "subtotal": 34.00,
+    "shipping_fee": 0.00,
+    "discount": 0.00,
+    "total": 34.00,
+    "items": [
+      {
+        "product_id": "acrylic-lamp",
+        "product_name": "Glowing Acrylic LED Night Lamp",
+        "price": 34.00,
+        "quantity": 1,
+        "product_color": "#FFE7B3",
+        "customization": {
+          "name": "Sarah & Michael",
+          "message": "To infinity and beyond ✨",
+          "date": "24th September",
+          "font": "Dancing Script",
+          "has_photo": true,
+          "photo_url": "assets/sample_couple.png"
+        }
+      }
+    ],
+    "timeline": [
+      { "step": "Order Placed", "time": "Oct 03, 2026 - 02:15 PM", "done": true, "note": "Order verified and payment authorized." },
+      { "step": "Customization Approved", "time": "Oct 03, 2026 - 04:30 PM", "done": true, "note": "High-res artwork sent to laser engraving queue." },
+      { "step": "In Production", "time": "Oct 04, 2026 - 09:30 AM", "done": true, "note": "Acrylic plaque precision laser-etched and mounted." },
+      { "step": "Quality Inspection", "time": "Pending", "done": false, "note": "Optical test and packaging." },
+      { "step": "Shipped & In Transit", "time": "Pending", "done": false, "note": "Carrier pickup scheduled." },
+      { "step": "Delivered", "time": "Pending", "done": false, "note": "Expected delivery by Oct 08." }
+    ]
+  },
+  {
+    "id": "ORD-512498",
+    "user_id": "usr_demo_002",
+    "customer_name": "Sarah Jenkins",
+    "customer_email": "sarah@example.com",
+    "customer_phone": "+1 (555) 234-5678",
+    "shipping_address": "742 Evergreen Terrace, Springfield, OR 97477",
+    "status": "delivered",
+    "status_label": "Delivered",
+    "tracking_number": "TRK-4421908-US",
+    "carrier": "USPS Priority",
+    "estimated_delivery": "Sep 28, 2026",
+    "created_at": "2026-09-22 10:00:00",
+    "updated_at": "2026-09-28 16:45:00",
+    "payment_method": "PayPal",
+    "subtotal": 18.99,
+    "shipping_fee": 4.99,
+    "discount": 0.00,
+    "total": 23.98,
+    "items": [
+      {
+        "product_id": "ceramic-mug",
+        "product_name": "Ceramic Keepsake Mug (11oz)",
+        "price": 18.99,
+        "quantity": 1,
+        "product_color": "#FFFFFF",
+        "customization": {
+          "name": "Mom & Dad",
+          "message": "World's Best Parents ☕",
+          "date": "Est. 1995",
+          "font": "Playfair Display",
+          "has_photo": true
+        }
+      }
+    ],
+    "timeline": [
+      { "step": "Order Placed", "time": "Sep 22, 2026 - 10:00 AM", "done": true, "note": "Order verified." },
+      { "step": "Customization Approved", "time": "Sep 22, 2026 - 11:20 AM", "done": true, "note": "Print artwork generated." },
+      { "step": "In Production", "time": "Sep 23, 2026 - 08:00 AM", "done": true, "note": "Mug sublimation heat pressed." },
+      { "step": "Quality Inspection", "time": "Sep 23, 2026 - 03:00 PM", "done": true, "note": "Dishwasher glaze checked." },
+      { "step": "Shipped & In Transit", "time": "Sep 24, 2026 - 09:15 AM", "done": true, "note": "In transit via USPS." },
+      { "step": "Delivered", "time": "Sep 28, 2026 - 04:45 PM", "done": true, "note": "Package safely delivered on front porch." }
+    ]
+  }
+]

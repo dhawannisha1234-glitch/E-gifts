@@ -1,0 +1,12 @@
+[
+  {
+    "id": "msg_001",
+    "name": "Robert Langdon",
+    "email": "robert@harvard.edu",
+    "phone": "+1 (617) 495-1000",
+    "subject": "Bulk Corporate Gift Query",
+    "message": "We would like to order 150 custom laser-etched tumblers and keychains for our annual alumni summit. Do you provide corporate quantity discounts?",
+    "created_at": "2026-10-02 11:20:00",
+    "status": "responded"
+  }
+]

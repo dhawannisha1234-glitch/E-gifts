@@ -1,0 +1,206 @@
+[
+  {
+    "id": "ceramic-mug",
+    "name": "Ceramic Keepsake Mug (11oz)",
+    "category": "mugs",
+    "category_name": "Personalized Mugs",
+    "price": 18.99,
+    "rating": 4.9,
+    "review_count": 142,
+    "badge": "Bestseller ⭐",
+    "image": "mug",
+    "short_description": "Premium ultra-glossy ceramic mug with wraparound photo finish and personalized quote.",
+    "description": "Start every morning with love. Our custom 11oz ceramic mug is crafted from durable, high-grade white ceramic with a glossy finish. Your personal photo and engraved message are permanently bonded to the surface using dye-sublimation printing that is 100% microwave and dishwasher safe.",
+    "features": [
+      "High-grade glossy ceramic (11oz / 325ml)",
+      "Microwave and dishwasher safe",
+      "Scratch-resistant vibrant dye-sublimation print",
+      "Comfort-grip C-handle for effortless sipping"
+    ],
+    "colors": [
+      { "name": "Pure White", "hex": "#FFFFFF", "dark": false },
+      { "name": "Midnight Black", "hex": "#1E293B", "dark": true },
+      { "name": "Soft Blush", "hex": "#FCE7F3", "dark": false },
+      { "name": "Mint Sage", "hex": "#E6F4EA", "dark": false }
+    ],
+    "defaultText": {
+      "name": "Sophia & Liam",
+      "message": "You make every morning brighter ☕",
+      "date": "Est. Oct 2024"
+    }
+  },
+  {
+    "id": "custom-tshirt",
+    "name": "Personalized Graphic Cotton T-Shirt",
+    "category": "tshirts",
+    "category_name": "Custom T-Shirts",
+    "price": 22.50,
+    "rating": 4.8,
+    "review_count": 118,
+    "badge": "Popular 🔥",
+    "image": "tshirt",
+    "short_description": "100% premium ring-spun combed cotton t-shirt with vibrant direct-to-garment custom print.",
+    "description": "Wear your favorite memories and messages proudly. Crafted from 180 GSM bio-washed super-combed cotton that stays ultra-soft wash after wash. Direct-to-Garment (DTG) printing provides rich, vibrant colors with breathable ink integration.",
+    "features": [
+      "100% Super Combed Bio-Washed Ring-Spun Cotton",
+      "Durable Direct-to-Garment (DTG) fade-proof print",
+      "Pre-shrunk fabric to prevent shrinking after wash",
+      "Regular unisex fit with ribbed collar and double stitching"
+    ],
+    "colors": [
+      { "name": "Jet Black", "hex": "#1E293B", "dark": true },
+      { "name": "Pure White", "hex": "#FFFFFF", "dark": false },
+      { "name": "Navy Blue", "hex": "#1E3A8A", "dark": true },
+      { "name": "Heather Grey", "hex": "#CBD5E1", "dark": false }
+    ],
+    "defaultText": {
+      "name": "Liam & Olivia",
+      "message": "Made For Each Other ✨",
+      "date": "Together Since 2021"
+    }
+  },
+  {
+    "id": "wooden-frame",
+    "name": "Nordic Oak Tabletop Photo Frame",
+    "category": "frames",
+    "category_name": "Photo Frames",
+    "price": 29.50,
+    "rating": 4.8,
+    "review_count": 98,
+    "badge": "Handcrafted",
+    "image": "frame",
+    "short_description": "Natural oak wood frame with laser-engraved caption plate and archival photo print.",
+    "description": "Preserve your dearest family moments in timeless Scandinavian elegance. Each frame is individually hand-finished from sustainable European oak. Features a beveled museum-grade mat board and a custom brass or silver laser-engraved nameplate.",
+    "features": [
+      "Solid European white oak with satin protective coat",
+      "Ultra-clear shatterproof optical glass front",
+      "Laser-engraved brushed metallic nameplate included",
+      "Dual easel stand for vertical or horizontal tabletop display"
+    ],
+    "colors": [
+      { "name": "Natural Oak", "hex": "#D7A15C", "dark": false },
+      { "name": "Dark Walnut", "hex": "#5C381E", "dark": true },
+      { "name": "Ash White", "hex": "#F3F4F6", "dark": false }
+    ],
+    "defaultText": {
+      "name": "The Henderson Family",
+      "message": "Where life begins and love never ends ❤️",
+      "date": "Summer 2024"
+    }
+  },
+  {
+    "id": "velvet-cushion",
+    "name": "Custom Velvet Throw Pillow (16x16\")",
+    "category": "cushions",
+    "category_name": "Custom Cushions",
+    "price": 24.99,
+    "rating": 4.7,
+    "review_count": 76,
+    "badge": "Cozy Pick",
+    "image": "cushion",
+    "short_description": "Ultra-soft micro-velvet cushion with vibrant edge-to-edge sublimation print.",
+    "description": "Snuggle up with sweet memories. Crafted from plush, velvety soft fabric with a concealed zipper and hypoallergenic polyester fiber filling. Full color edge-to-edge high-definition sublimation printing.",
+    "features": [
+      "Luxurious soft-touch velvet polyester cover",
+      "Includes plush virgin poly-fill pillow insert",
+      "Hidden bottom zipper for easy machine washing",
+      "Fade-resistant, baby-safe and pet-safe inks"
+    ],
+    "colors": [
+      { "name": "Soft Cream", "hex": "#FAF7F2", "dark": false },
+      { "name": "Pastel Slate", "hex": "#CBD5E1", "dark": false },
+      { "name": "Dusty Rose", "hex": "#E2B8B8", "dark": false }
+    ],
+    "defaultText": {
+      "name": "Home Sweet Home",
+      "message": "Filled with memories and warm cuddles 🏡",
+      "date": "Established 2023"
+    }
+  },
+  {
+    "id": "crystal-keychain",
+    "name": "Laser 3D Crystal Keychain",
+    "category": "keychains",
+    "category_name": "Keychains & Keepsakes",
+    "price": 14.99,
+    "rating": 4.8,
+    "review_count": 64,
+    "badge": "Pocket Gift",
+    "image": "keychain",
+    "short_description": "Precision subsurface laser-engraved K9 optical crystal with bright LED accent light.",
+    "description": "Keep your favorite loved ones or company logo right in your pocket. Made of top-grade K9 crystal with subsurface laser engraving that appears floating inside the glass.",
+    "features": [
+      "Pure optical K9 crystal block (30x20x15mm)",
+      "Built-in rotary LED light with replaceable battery",
+      "Stainless steel heavy-duty key ring and chain",
+      "Includes premium velvet gift pouch"
+    ],
+    "colors": [
+      { "name": "Clear Crystal", "hex": "#FFFFFF", "dark": false },
+      { "name": "Blue LED Accent", "hex": "#38BDF8", "dark": false }
+    ],
+    "defaultText": {
+      "name": "Best Dad Ever",
+      "message": "Always by my side ❤️",
+      "date": "2024"
+    }
+  },
+  {
+    "id": "acrylic-lamp",
+    "name": "Glowing Acrylic LED Night Lamp",
+    "category": "lamps",
+    "category_name": "LED Acrylic Lamps",
+    "price": 34.00,
+    "rating": 5.0,
+    "review_count": 215,
+    "badge": "Trending 🔥",
+    "image": "lamp",
+    "short_description": "Crystal-clear acrylic plaque with soft warm LED illumination and custom laser etching.",
+    "description": "Turn your favorite photo into an enchanting warm night light. Precision laser-etched onto optical grade 5mm thick cast acrylic that slots into a solid beechwood LED pedestal. Emits a soothing ambient glow perfect for bedrooms, desks, or living rooms.",
+    "features": [
+      "5mm ultra-clear shatterproof cast acrylic plaque",
+      "Solid beechwood base with hidden warm-white LED strip",
+      "USB powered with inline on/off push button switch",
+      "High-precision laser engraving that never fades or peels"
+    ],
+    "colors": [
+      { "name": "Warm Amber LED", "hex": "#FFE7B3", "dark": false },
+      { "name": "Pure White LED", "hex": "#E0F2FE", "dark": false },
+      { "name": "Romantic Pink LED", "hex": "#FCE7F3", "dark": false }
+    ],
+    "defaultText": {
+      "name": "Happy Anniversary",
+      "message": "Forever my favorite chapter ✨",
+      "date": "24th September"
+    }
+  },
+  {
+    "id": "steel-tumbler",
+    "name": "Insulated Stainless Steel Tumbler (20oz)",
+    "category": "mugs",
+    "category_name": "Personalized Mugs & Drinkware",
+    "price": 27.50,
+    "rating": 4.9,
+    "review_count": 83,
+    "badge": "Eco Friendly",
+    "image": "mug",
+    "short_description": "Double-wall vacuum insulated tumbler with custom photo print & laser etched name.",
+    "description": "Keep beverages hot for 8 hours or ice-cold for 18 hours. Made from 18/8 food-grade stainless steel with sweat-free powder coating and spill-resistant lid.",
+    "features": [
+      "Double-wall vacuum thermal insulation",
+      "18/8 kitchen-grade stainless steel interior",
+      "BPA-free clear sliding lid with straw hole",
+      "Fits standard automobile cup holders"
+    ],
+    "colors": [
+      { "name": "Matte Black", "hex": "#0F172A", "dark": true },
+      { "name": "Rose Gold", "hex": "#FB7185", "dark": false },
+      { "name": "Polar White", "hex": "#F8FAFC", "dark": false }
+    ],
+    "defaultText": {
+      "name": "Alex Morgan",
+      "message": "Fueled by coffee & ambition ☕",
+      "date": "Est. 2024"
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "rev_001",
+    "product_id": "ceramic-mug",
+    "user_name": "Emily Watson",
+    "rating": 5,
+    "verified": true,
+    "title": "Absolutely stunning quality!",
+    "comment": "I ordered this for our 5th anniversary with a picture from our beach vacation. The ceramic is super heavy and glossy, and the photo colors came out crisp and rich. My husband loves his morning coffee even more now!",
+    "date": "2026-09-28"
+  },
+  {
+    "id": "rev_002",
+    "product_id": "ceramic-mug",
+    "user_name": "David Martinez",
+    "rating": 5,
+    "verified": true,
+    "title": "Fast delivery & flawless custom text",
+    "comment": "The live preview on the website matched the actual physical mug 100%. The Dancing Script font looks genuinely engraved. Well packaged and arrived in 3 days.",
+    "date": "2026-09-15"
+  },
+  {
+    "id": "rev_003",
+    "product_id": "wooden-frame",
+    "user_name": "Jessica Taylor",
+    "rating": 5,
+    "verified": true,
+    "title": "Heirloom grade wood frame",
+    "comment": "The natural oak aroma and smooth beveled corners are gorgeous. The engraved brass plate gave it such a luxurious touch for my parents' golden anniversary.",
+    "date": "2026-09-10"
+  },
+  {
+    "id": "rev_004",
+    "product_id": "acrylic-lamp",
+    "user_name": "Marcus Chen",
+    "rating": 5,
+    "verified": true,
+    "title": "Magical glow in the dark room!",
+    "comment": "The warm amber LED lights up the etched acrylic plaque so beautifully. It has become our nightly bedside lamp. Exceptional craftsmanship!",
+    "date": "2026-09-20"
+  },
+  {
+    "id": "rev_005",
+    "product_id": "velvet-cushion",
+    "user_name": "Chloe Bennett",
+    "rating": 4,
+    "verified": true,
+    "title": "Super soft and cute pet pillow",
+    "comment": "I put my golden retriever's puppy photo on this pillow. The velvet texture is delightfully soft and the zipper is completely hidden.",
+    "date": "2026-08-30"
+  }
+]
