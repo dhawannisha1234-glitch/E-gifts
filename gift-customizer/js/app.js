@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 ${p.badge ? `<span class="product-option-badge">${p.badge}</span>` : ''}
                 <div class="product-option-title">${p.name}</div>
-                <div class="product-option-price">$${p.price.toFixed(2)}</div>
+                <div class="product-option-price">₹${p.price.toLocaleString('en-IN')}</div>
             `;
             card.addEventListener('click', () => {
                 selectProduct(p.id);
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updatePriceDisplay() {
         if (productPriceDisplay) {
-            productPriceDisplay.textContent = `$${customizer.product.price.toFixed(2)}`;
+            productPriceDisplay.textContent = `₹${customizer.product.price.toLocaleString('en-IN')}`;
         }
     }
 
@@ -344,9 +344,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div style="font-size: 0.85rem; margin-top: 0.25rem;">Customize a gift above and click "Save Customization"</div>
                 </div>
             `;
-            cartSubtotalDisplay.textContent = '$0.00';
-            cartShippingDisplay.textContent = '$0.00';
-            cartTotalDisplay.textContent = '$0.00';
+            cartSubtotalDisplay.textContent = '₹0';
+            cartShippingDisplay.textContent = '₹0';
+            cartTotalDisplay.textContent = '₹0';
             checkoutBtn.disabled = true;
             checkoutBtn.style.opacity = '0.5';
             return;
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                     <div class="cart-item-bottom">
-                        <div class="cart-item-price">$${(item.unitPrice * item.quantity).toFixed(2)}</div>
+                        <div class="cart-item-price">₹${Math.round(item.unitPrice * item.quantity).toLocaleString('en-IN')}</div>
                         <div class="qty-controls">
                             <button class="qty-btn qty-dec" data-id="${item.id}">-</button>
                             <span class="qty-value">${item.quantity}</span>
@@ -404,10 +404,10 @@ document.addEventListener('DOMContentLoaded', () => {
             cartDrawerItems.appendChild(itemEl);
         });
 
-        cartSubtotalDisplay.textContent = `$${window.cartManager.getSubtotal().toFixed(2)}`;
+        cartSubtotalDisplay.textContent = `₹${Math.round(window.cartManager.getSubtotal()).toLocaleString('en-IN')}`;
         const shipping = window.cartManager.getShipping();
-        cartShippingDisplay.textContent = shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`;
-        cartTotalDisplay.textContent = `$${window.cartManager.getTotal().toFixed(2)}`;
+        cartShippingDisplay.textContent = shipping === 0 ? 'FREE' : `₹${Math.round(shipping).toLocaleString('en-IN')}`;
+        cartTotalDisplay.textContent = `₹${Math.round(window.cartManager.getTotal()).toLocaleString('en-IN')}`;
     }
 
     // Listen to cart updates globally
@@ -419,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
     checkoutBtn.addEventListener('click', () => {
         const orderId = 'ORD-' + Math.floor(100000 + Math.random() * 900000);
         const count = window.cartManager.getItemCount();
-        const total = window.cartManager.getTotal().toFixed(2);
+        const total = Math.round(window.cartManager.getTotal()).toLocaleString('en-IN');
 
         modalOrderDetails.innerHTML = `
             <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem; text-align: left; margin-bottom: 1.5rem;">
@@ -433,7 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #64748B;">
                     <span>Total Amount Paid:</span>
-                    <span style="font-weight: 700; color: #0F172A;">$${total}</span>
+                    <span style="font-weight: 700; color: #0F172A;">₹${total}</span>
                 </div>
                 <div style="border-top: 1px dashed #CBD5E1; padding-top: 0.5rem; font-size: 0.85rem; color: #10B981; font-weight: 600;">
                     ✓ All custom photos &amp; text specifications forwarded to production shop.

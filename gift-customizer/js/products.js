@@ -7,7 +7,7 @@ const PRODUCTS = [
         id: 'ceramic-mug',
         name: 'Ceramic Keepsake Mug (11oz)',
         category: 'Drinkware',
-        price: 18.99,
+        price: 499,
         badge: 'Bestseller ⭐',
         description: 'Premium ultra-glossy ceramic mug with wraparound photo finish and personalized quote.',
         colors: [
@@ -35,7 +35,7 @@ const PRODUCTS = [
         id: 'wooden-frame',
         name: 'Nordic Oak Tabletop Photo Frame',
         category: 'Home Decor',
-        price: 29.50,
+        price: 899,
         badge: 'Handcrafted',
         description: 'Natural oak wood frame with laser-engraved caption plate and archival photo print.',
         colors: [
@@ -62,7 +62,7 @@ const PRODUCTS = [
         id: 'acrylic-lamp',
         name: 'Glowing Acrylic LED Night Lamp',
         category: 'Lighting',
-        price: 34.00,
+        price: 999,
         badge: 'Trending 🔥',
         description: 'Crystal-clear acrylic plaque with soft warm LED illumination and custom laser etching.',
         colors: [
@@ -89,7 +89,7 @@ const PRODUCTS = [
         id: 'velvet-cushion',
         name: 'Custom Velvet Throw Pillow (16x16")',
         category: 'Living',
-        price: 24.99,
+        price: 599,
         badge: 'Cozy Pick',
         description: 'Ultra-soft micro-velvet cushion with vibrant edge-to-edge sublimation print.',
         colors: [
@@ -116,7 +116,7 @@ const PRODUCTS = [
         id: 'custom-tshirt',
         name: 'Personalized Graphic Cotton T-Shirt',
         category: 'Apparel',
-        price: 22.50,
+        price: 699,
         badge: 'Top Pick 🔥',
         description: '100% premium ring-spun combed cotton t-shirt with vibrant direct-to-garment custom print.',
         colors: [
@@ -144,7 +144,7 @@ const PRODUCTS = [
         id: 'crystal-keychain',
         name: 'Laser 3D Crystal Keychain',
         category: 'Keepsakes',
-        price: 14.99,
+        price: 299,
         badge: 'Pocket Gift',
         description: 'Precision subsurface laser-engraved K9 optical crystal with bright LED accent light.',
         colors: [

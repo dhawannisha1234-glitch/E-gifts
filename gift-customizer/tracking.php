@@ -152,7 +152,7 @@ if (!$order) {
                                 </div>
 
                                 <div style="margin-top: 0.5rem; font-size: 0.9rem; font-weight: 700; color: #4F46E5;">
-                                    Qty: <?= $item['quantity'] ?? 1 ?> • $<?= number_format(floatval($item['price'] ?? $item['unitPrice'] ?? 0), 2) ?> each
+                                    Qty: <?= $item['quantity'] ?? 1 ?> • <?= format_price($item['price'] ?? $item['unitPrice'] ?? 0) ?> each
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@ if (!$order) {
 
                     <div style="text-align: right;">
                         <div style="font-size: 0.9rem; color: #64748B;">Total Amount Paid:</div>
-                        <div style="font-size: 1.6rem; font-weight: 800; color: #0F172A;">$<?= number_format(floatval($order['total'] ?? 0), 2) ?></div>
+                        <div style="font-size: 1.6rem; font-weight: 800; color: #0F172A;"><?= format_price($order['total'] ?? 0) ?></div>
                         <div style="font-size: 0.75rem; color: #10B981; font-weight: 600;">✓ Payment Verified via <?= htmlspecialchars($order['payment_method'] ?? 'Card') ?></div>
                     </div>
                 </div>

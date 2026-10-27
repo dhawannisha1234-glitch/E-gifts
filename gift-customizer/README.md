@@ -17,7 +17,7 @@ A full-featured personalized gift e-commerce web platform built with **PHP 8.3**
 2. **🛍️ Shopping Cart** (`cart.php`)
    - Itemized view with customized thumbnail snapshots, custom message, font style, and unit pricing.
    - Real-time quantity adjustments, subtotal, and free shipping calculation.
-   - Promo coupon discounts (e.g. `GIFT10` for 10% off, `WELCOME5` for $5 off).
+   - Promo coupon discounts (e.g. `GIFT10` for 10% off, `WELCOME5` for ₹50 off).
 
 3. **🔒 Secure Checkout** (`checkout.php`)
    - Shipping address & recipient contact collection.
@@ -55,7 +55,7 @@ A full-featured personalized gift e-commerce web platform built with **PHP 8.3**
    - Profile & default shipping address editor.
 
 9. **👑 Administrator Panel** (`admin/index.php`, `admin/login.php`)
-   - KPI metrics: Total Sales ($), Total Orders, In-Production Customizations, Total Customers.
+   - KPI metrics: Total Sales (₹), Total Orders, In-Production Customizations, Total Customers.
    - Order management table: Inspect customer uploaded photos and engraved text.
    - Real-time Order Status updater (Order Placed &rarr; In Production &rarr; Shipped &rarr; Delivered).
    - View contact form inquiries.

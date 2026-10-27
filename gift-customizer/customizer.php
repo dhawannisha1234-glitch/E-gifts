@@ -195,7 +195,7 @@ $selectedProductId = $_GET['product'] ?? 'ceramic-mug';
                             <div class="pricing-label">Customized Product Price</div>
                             <div style="font-size: 0.78rem; color: #10B981; font-weight: 600;">✓ Free photo upload &amp; text engraving included</div>
                         </div>
-                        <div class="pricing-amount" id="productPriceDisplay">$18.99</div>
+                        <div class="pricing-amount" id="productPriceDisplay">₹499</div>
                     </div>
 
                     <!-- Save Customization with the Product Button (MVP Main Feature) -->
@@ -231,7 +231,7 @@ $selectedProductId = $_GET['product'] ?? 'ceramic-mug';
     <div class="cart-drawer-footer">
         <div class="summary-line">
             <span>Subtotal</span>
-            <span id="cartSubtotalDisplay">$0.00</span>
+            <span id="cartSubtotalDisplay">₹0</span>
         </div>
         <div class="summary-line">
             <span>Standard Shipping</span>
@@ -239,7 +239,7 @@ $selectedProductId = $_GET['product'] ?? 'ceramic-mug';
         </div>
         <div class="summary-line total">
             <span>Total Amount</span>
-            <span id="cartTotalDisplay">$0.00</span>
+            <span id="cartTotalDisplay">₹0</span>
         </div>
         <a href="cart.php" class="checkout-btn" style="text-decoration: none;">View Full Cart &amp; Checkout 💳</a>
     </div>

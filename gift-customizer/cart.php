@@ -9,9 +9,9 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['action']) && 
         $_SESSION['promo_code'] = 'GIFT10';
         set_flash('success', 'Coupon GIFT10 applied! 10% discount deducted.');
     } elseif ($code === 'WELCOME5') {
-        $_SESSION['promo_discount'] = 5.00; // $5 fixed
+        $_SESSION['promo_discount'] = 50.00; // ₹50 fixed
         $_SESSION['promo_code'] = 'WELCOME5';
-        set_flash('success', 'Coupon WELCOME5 applied! $5 discount deducted.');
+        set_flash('success', 'Coupon WELCOME5 applied! ₹50 discount deducted.');
     } else {
         set_flash('error', 'Invalid promo code. Try GIFT10 or WELCOME5.');
     }
@@ -80,7 +80,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="summary-rows">
                     <div class="summary-row">
                         <span class="summary-label">Items Subtotal</span>
-                        <span class="summary-val" id="pageSubtotal">$0.00</span>
+                        <span class="summary-val" id="pageSubtotal">₹0</span>
                     </div>
 
                     <div class="summary-row">
@@ -90,12 +90,12 @@ require_once __DIR__ . '/includes/header.php';
 
                     <div class="summary-row" id="discountRow" style="display: none;">
                         <span class="summary-label" style="color: #10B981;">Promo Discount (<span id="promoCodeLabel"></span>)</span>
-                        <span class="summary-val" style="color: #10B981;" id="pageDiscount">-$0.00</span>
+                        <span class="summary-val" style="color: #10B981;" id="pageDiscount">-₹0</span>
                     </div>
 
                     <div class="summary-row total-row">
                         <span class="total-label">Estimated Total</span>
-                        <span class="total-amount" id="pageTotal">$0.00</span>
+                        <span class="total-amount" id="pageTotal">₹0</span>
                     </div>
                 </div>
 
@@ -156,9 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </div>
             `;
-            subtotalEl.textContent = '$0.00';
-            shippingEl.textContent = '$0.00';
-            totalEl.textContent = '$0.00';
+            subtotalEl.textContent = '₹0';
+            shippingEl.textContent = '₹0';
+            totalEl.textContent = '₹0';
             discountRow.style.display = 'none';
             checkoutBtn.style.opacity = '0.5';
             checkoutBtn.style.pointerEvents = 'none';
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div style="flex: 1; text-align: center; font-weight: 600; color: #64748B;">
-                    $${item.unitPrice.toFixed(2)}
+                    ₹${Math.round(item.unitPrice).toLocaleString('en-IN')}
                 </div>
 
                 <div style="flex: 1; display: flex; justify-content: center;">
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div style="flex: 1; text-align: right; font-weight: 800; color: #0F172A; font-size: 1.05rem;">
-                    $${(item.unitPrice * item.quantity).toFixed(2)}
+                    ₹${Math.round(item.unitPrice * item.quantity).toLocaleString('en-IN')}
                 </div>
 
                 <div style="width: 40px; text-align: right;">
@@ -214,22 +214,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Calculate summary
         const subtotal = window.cartManager.getSubtotal();
-        const shipping = subtotal >= 50 || subtotal === 0 ? 0 : 4.99;
+        const shipping = subtotal >= 999 || subtotal === 0 ? 0 : 99;
         let discount = 0;
         if (appliedDiscountPercent > 0) {
             discount = subtotal * appliedDiscountPercent;
             discountRow.style.display = 'flex';
             promoCodeLabel.textContent = promoCodeName;
-            discountEl.textContent = `-$${discount.toFixed(2)}`;
+            discountEl.textContent = `-₹${Math.round(discount).toLocaleString('en-IN')}`;
         } else {
             discountRow.style.display = 'none';
         }
 
         const total = Math.max(0, subtotal - discount + shipping);
 
-        subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
-        shippingEl.textContent = shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`;
-        totalEl.textContent = `$${total.toFixed(2)}`;
+        subtotalEl.textContent = `₹${Math.round(subtotal).toLocaleString('en-IN')}`;
+        shippingEl.textContent = shipping === 0 ? 'FREE' : `₹${shipping}`;
+        totalEl.textContent = `₹${Math.round(total).toLocaleString('en-IN')}`;
     }
 
     window.updateItemQty = (id, delta) => {

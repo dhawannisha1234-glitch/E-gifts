@@ -14,15 +14,15 @@
     "created_at": "2026-10-03 14:15:00",
     "updated_at": "2026-10-04 09:30:00",
     "payment_method": "Credit Card (Visa ending in 4242)",
-    "subtotal": 34.00,
+    "subtotal": 999.00,
     "shipping_fee": 0.00,
     "discount": 0.00,
-    "total": 34.00,
+    "total": 999.00,
     "items": [
       {
         "product_id": "acrylic-lamp",
         "product_name": "Glowing Acrylic LED Night Lamp",
-        "price": 34.00,
+        "price": 999.00,
         "quantity": 1,
         "product_color": "#FFE7B3",
         "customization": {
@@ -59,15 +59,15 @@
     "created_at": "2026-09-22 10:00:00",
     "updated_at": "2026-09-28 16:45:00",
     "payment_method": "PayPal",
-    "subtotal": 18.99,
-    "shipping_fee": 4.99,
+    "subtotal": 499.00,
+    "shipping_fee": 99.00,
     "discount": 0.00,
-    "total": 23.98,
+    "total": 598.00,
     "items": [
       {
         "product_id": "ceramic-mug",
         "product_name": "Ceramic Keepsake Mug (11oz)",
-        "price": 18.99,
+        "price": 499.00,
         "quantity": 1,
         "product_color": "#FFFFFF",
         "customization": {

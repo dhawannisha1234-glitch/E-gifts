@@ -102,7 +102,7 @@ $relatedProducts = array_filter($allProducts, fn($p) => $p['id'] !== $product['i
             </div>
 
             <div class="detail-price-box">
-                <span class="detail-price">$<?= number_format($product['price'], 2) ?></span>
+                <span class="detail-price"><?= format_price($product['price']) ?></span>
                 <span class="detail-price-sub">Free Photo Upload &amp; Custom Engraving Included</span>
             </div>
 
@@ -293,7 +293,7 @@ $relatedProducts = array_filter($allProducts, fn($p) => $p['id'] !== $product['i
                         <div class="product-card-category"><?= htmlspecialchars($rp['category_name']) ?></div>
                         <h4 class="product-card-title"><a href="product-detail.php?id=<?= urlencode($rp['id']) ?>"><?= htmlspecialchars($rp['name']) ?></a></h4>
                         <div class="product-card-footer">
-                            <div class="product-card-price">$<?= number_format($rp['price'], 2) ?></div>
+                            <div class="product-card-price"><?= format_price($rp['price']) ?></div>
                             <a href="customizer.php?product=<?= urlencode($rp['id']) ?>" class="btn-card-customize">Customize</a>
                         </div>
                     </div>

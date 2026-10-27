@@ -113,7 +113,7 @@ $pageTitle = 'Admin Management Dashboard';
             <div class="stat-card">
                 <div class="stat-icon-circle" style="background: #ECFDF5; color: #059669;">💰</div>
                 <div>
-                    <div class="stat-val">$<?= number_format($totalRevenue, 2) ?></div>
+                    <div class="stat-val"><?= format_price($totalRevenue) ?></div>
                     <div class="stat-label">Total Custom Sales</div>
                 </div>
             </div>
@@ -189,7 +189,7 @@ $pageTitle = 'Admin Management Dashboard';
                                     <?php endforeach; ?>
                                 </td>
                                 <td style="font-weight: 800; font-size: 1rem; color: #0F172A;">
-                                    $<?= number_format(floatval($ord['total']), 2) ?>
+                                    <?= format_price($ord['total']) ?>
                                 </td>
                                 <td>
                                     <form action="index.php" method="POST" style="display: flex; gap: 0.4rem; align-items: center;">

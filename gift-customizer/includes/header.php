@@ -20,7 +20,7 @@ $flash = get_flash();
 
     <!-- Announcement Bar -->
     <div class="announcement-bar">
-        <span>✨ Free Gift Packaging &amp; Shipping on Orders Over $50 • 100% Live 3D Preview Guaranteed</span>
+        <span>✨ Free Gift Packaging &amp; Shipping on Orders Over ₹999 • 100% Live 3D Preview Guaranteed</span>
     </div>
 
     <!-- Header Navigation -->

@@ -150,7 +150,7 @@ $categoriesList = [
                         <p class="product-card-desc"><?= htmlspecialchars($p['short_description']) ?></p>
 
                         <div class="product-card-footer">
-                            <div class="product-card-price">$<?= number_format($p['price'], 2) ?></div>
+                            <div class="product-card-price"><?= format_price($p['price']) ?></div>
                             <div class="product-card-actions">
                                 <a href="product-detail.php?id=<?= urlencode($p['id']) ?>" class="btn-card-detail">Details</a>
                                 <a href="customizer.php?product=<?= urlencode($p['id']) ?>" class="btn-card-customize">

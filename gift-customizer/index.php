@@ -37,7 +37,7 @@ $reviews = get_reviews();
                     <div style="font-weight: 700; font-size: 0.95rem;">Classic Ceramic Keepsake Mug</div>
                     <div style="color: #64748B; font-size: 0.8rem;">Custom photo &amp; romantic engraved quote</div>
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
-                        <span style="font-weight: 800; color: #4F46E5;">$18.99</span>
+                        <span style="font-weight: 800; color: #4F46E5;">₹499</span>
                         <a href="customizer.php?product=ceramic-mug" class="btn-sm-primary">Customize 🎁</a>
                     </div>
                 </div>
@@ -153,7 +153,7 @@ $reviews = get_reviews();
                     <p class="product-card-desc"><?= htmlspecialchars($p['short_description']) ?></p>
 
                     <div class="product-card-footer">
-                        <div class="product-card-price">$<?= number_format($p['price'], 2) ?></div>
+                        <div class="product-card-price"><?= format_price($p['price']) ?></div>
                         <div class="product-card-actions">
                             <a href="product-detail.php?id=<?= urlencode($p['id']) ?>" class="btn-card-detail" title="View Details">Details</a>
                             <a href="customizer.php?product=<?= urlencode($p['id']) ?>" class="btn-card-customize">

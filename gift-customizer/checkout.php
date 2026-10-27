@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             [
                 'product_id' => 'ceramic-mug',
                 'product_name' => 'Ceramic Keepsake Mug (11oz)',
-                'price' => 18.99,
+                'price' => 499,
                 'quantity' => 1,
                 'product_color' => '#FFFFFF',
                 'customization' => [
@@ -34,11 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
     $subtotal = 0;
     foreach ($items as $it) {
-        $price = floatval($it['unitPrice'] ?? $it['price'] ?? 18.99);
+        $price = floatval($it['unitPrice'] ?? $it['price'] ?? 499);
         $qty = intval($it['quantity'] ?? 1);
         $subtotal += ($price * $qty);
     }
-    $shippingFee = $subtotal >= 50 ? 0.00 : 4.99;
+    $shippingFee = $subtotal >= 999 ? 0.00 : 99.00;
     $total = $subtotal + $shippingFee;
 
     $orderId = 'ORD-' . strtoupper(substr(uniqid(), 7, 6));
@@ -167,7 +167,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="summary-rows">
                     <div class="summary-row">
                         <span class="summary-label">Subtotal</span>
-                        <span class="summary-val" id="checkoutSubtotal">$0.00</span>
+                        <span class="summary-val" id="checkoutSubtotal">₹0</span>
                     </div>
                     <div class="summary-row">
                         <span class="summary-label">Shipping</span>
@@ -175,7 +175,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="summary-row total-row">
                         <span class="total-label">Total to Pay</span>
-                        <span class="total-amount" id="checkoutTotal">$0.00</span>
+                        <span class="total-amount" id="checkoutTotal">₹0</span>
                     </div>
                 </div>
             </div>
@@ -199,8 +199,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (items.length === 0) {
         itemsList.innerHTML = '<div style="font-size: 0.85rem; color: #64748B;">Custom item ready for checkout.</div>';
-        subtotalEl.textContent = '$18.99';
-        totalEl.textContent = '$18.99';
+        subtotalEl.textContent = '₹499';
+        totalEl.textContent = '₹499';
     } else {
         itemsList.innerHTML = '';
         items.forEach(it => {
@@ -212,15 +212,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div style="font-weight: 700; color: #0F172A;">${it.productName} (x${it.quantity})</div>
                     <div style="color: #4F46E5; font-size: 0.75rem;">"${it.customization.name || 'Personalized'}"</div>
                 </div>
-                <div style="font-weight: 700; font-size: 0.9rem;">$${(it.unitPrice * it.quantity).toFixed(2)}</div>
+                <div style="font-weight: 700; font-size: 0.9rem;">₹${Math.round(it.unitPrice * it.quantity).toLocaleString('en-IN')}</div>
             `;
             itemsList.appendChild(el);
         });
 
         const subtotal = window.cartManager.getSubtotal();
         const total = window.cartManager.getTotal();
-        subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
-        totalEl.textContent = `$${total.toFixed(2)}`;
+        subtotalEl.textContent = `₹${Math.round(subtotal).toLocaleString('en-IN')}`;
+        totalEl.textContent = `₹${Math.round(total).toLocaleString('en-IN')}`;
     }
 
     form.addEventListener('submit', () => {

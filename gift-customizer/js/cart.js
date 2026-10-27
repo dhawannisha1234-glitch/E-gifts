@@ -94,7 +94,7 @@ class CartManager {
     getShipping() {
         const subtotal = this.getSubtotal();
         if (subtotal === 0) return 0;
-        return subtotal >= 50 ? 0 : 4.99; // Free shipping over $50
+        return subtotal >= 999 ? 0 : 99; // Free shipping over ₹999
     }
 
     getTotal() {

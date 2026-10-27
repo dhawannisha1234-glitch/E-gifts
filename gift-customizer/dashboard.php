@@ -120,7 +120,7 @@ require_once __DIR__ . '/includes/header.php';
                                     </div>
 
                                     <div style="text-align: right;">
-                                        <div style="font-size: 1.15rem; font-weight: 800; color: #0F172A;">$<?= number_format(floatval($ord['total']), 2) ?></div>
+                                        <div style="font-size: 1.15rem; font-weight: 800; color: #0F172A;"><?= format_price($ord['total']) ?></div>
                                         <a href="tracking.php?order_id=<?= urlencode($ord['id']) ?>" class="btn-track-pill">
                                             Live Tracker &rarr;
                                         </a>

@@ -162,42 +162,42 @@ INSERT INTO `categories` (`slug`, `name`, `description`, `icon`, `sort_order`) V
 
 -- Seed Products
 INSERT INTO `products` (`id`, `category_slug`, `category_name`, `name`, `price`, `rating`, `review_count`, `badge`, `image`, `short_description`, `description`, `features`, `colors`, `default_text`) VALUES
-('ceramic-mug', 'mugs', 'Personalized Mugs', 'Ceramic Keepsake Mug (11oz)', 18.99, 4.9, 142, 'Bestseller ⭐', 'mug', 
+('ceramic-mug', 'mugs', 'Personalized Mugs', 'Ceramic Keepsake Mug (11oz)', 499.00, 4.9, 142, 'Bestseller ⭐', 'mug', 
  'Premium ultra-glossy ceramic mug with wraparound photo finish and personalized quote.',
  'Start every morning with love. Our custom 11oz ceramic mug is crafted from durable, high-grade white ceramic with a glossy finish. Microwave and dishwasher safe.',
  '["High-grade glossy ceramic (11oz / 325ml)", "Microwave and dishwasher safe", "Scratch-resistant vibrant dye-sublimation print", "Comfort-grip C-handle for effortless sipping"]',
  '[{"name": "Pure White", "hex": "#FFFFFF", "dark": false}, {"name": "Midnight Black", "hex": "#1E293B", "dark": true}, {"name": "Soft Blush", "hex": "#FCE7F3", "dark": false}, {"name": "Mint Sage", "hex": "#E6F4EA", "dark": false}]',
  '{"name": "Sophia & Liam", "message": "You make every morning brighter ☕", "date": "Est. Oct 2024"}'),
 
-('custom-tshirt', 'tshirts', 'Custom T-Shirts', 'Custom Graphic Cotton T-Shirt', 22.50, 4.8, 118, 'Top Pick 🔥', 'tshirt',
+('custom-tshirt', 'tshirts', 'Custom T-Shirts', 'Custom Graphic Cotton T-Shirt', 699.00, 4.8, 118, 'Top Pick 🔥', 'tshirt',
  '100% premium ring-spun combed cotton t-shirt with vibrant direct-to-garment custom print.',
  'Wear your memories proudly. Crafted from breathable, heavyweight 180 GSM bio-washed cotton. Features reinforced double-needle stitching and high-resolution DTG printing.',
  '["100% Super Combed Bio-Washed Ring-Spun Cotton", "Durable Direct-to-Garment (DTG) fade-proof print", "Pre-shrunk fabric to prevent shrinking after wash", "Regular unisex fit with ribbed collar"]',
  '[{"name": "Jet Black", "hex": "#1E293B", "dark": true}, {"name": "Pure White", "hex": "#FFFFFF", "dark": false}, {"name": "Navy Blue", "hex": "#1E3A8A", "dark": true}, {"name": "Heather Grey", "hex": "#E2E8F0", "dark": false}]',
  '{"name": "Liam & Olivia", "message": "Made For Each Other ✨", "date": "Together Since 2021"}'),
 
-('wooden-frame', 'frames', 'Photo Frames', 'Nordic Oak Tabletop Photo Frame', 29.50, 4.8, 98, 'Handcrafted', 'frame',
+('wooden-frame', 'frames', 'Photo Frames', 'Nordic Oak Tabletop Photo Frame', 899.00, 4.8, 98, 'Handcrafted', 'frame',
  'Natural oak wood frame with laser-engraved caption plate and archival photo print.',
  'Preserve your dearest family moments in timeless Scandinavian elegance. Each frame is individually hand-finished from sustainable European oak with beveled museum-grade mat board.',
  '["Solid European white oak with satin protective coat", "Ultra-clear shatterproof optical glass front", "Laser-engraved brushed metallic nameplate included", "Dual easel stand for vertical or horizontal tabletop display"]',
  '[{"name": "Natural Oak", "hex": "#D7A15C", "dark": false}, {"name": "Dark Walnut", "hex": "#5C381E", "dark": true}, {"name": "Ash White", "hex": "#F3F4F6", "dark": false}]',
  '{"name": "The Henderson Family", "message": "Where life begins and love never ends ❤️", "date": "Summer 2024"}'),
 
-('velvet-cushion', 'cushions', 'Custom Cushions', 'Custom Velvet Throw Pillow (16x16")', 24.99, 4.7, 76, 'Cozy Pick', 'cushion',
+('velvet-cushion', 'cushions', 'Custom Cushions', 'Custom Velvet Throw Pillow (16x16")', 599.00, 4.7, 76, 'Cozy Pick', 'cushion',
  'Ultra-soft micro-velvet cushion with vibrant edge-to-edge sublimation print.',
  'Snuggle up with sweet memories. Crafted from plush, velvety soft fabric with a concealed zipper and hypoallergenic polyester fiber filling.',
  '["Luxurious soft-touch velvet polyester cover", "Includes plush virgin poly-fill pillow insert", "Hidden bottom zipper for easy machine washing", "Fade-resistant, baby-safe and pet-safe inks"]',
  '[{"name": "Soft Cream", "hex": "#FAF7F2", "dark": false}, {"name": "Pastel Slate", "hex": "#CBD5E1", "dark": false}, {"name": "Dusty Rose", "hex": "#E2B8B8", "dark": false}]',
  '{"name": "Home Sweet Home", "message": "Filled with memories and warm cuddles 🏡", "date": "Established 2023"}'),
 
-('crystal-keychain', 'keychains', 'Crystal Keychains', 'Laser 3D Crystal Keychain', 14.99, 4.8, 64, 'Pocket Gift', 'keychain',
+('crystal-keychain', 'keychains', 'Crystal Keychains', 'Laser 3D Crystal Keychain', 299.00, 4.8, 64, 'Pocket Gift', 'keychain',
  'Precision subsurface laser-engraved K9 optical crystal with bright LED accent light.',
  'Keep your favorite loved ones or company logo right in your pocket. Top-grade K9 crystal with subsurface laser engraving that appears floating inside the glass.',
  '["Pure optical K9 crystal block (30x20x15mm)", "Built-in rotary LED light with replaceable battery", "Stainless steel heavy-duty key ring and chain", "Includes premium velvet gift pouch"]',
  '[{"name": "Clear Crystal", "hex": "#FFFFFF", "dark": false}, {"name": "Blue LED Accent", "hex": "#38BDF8", "dark": false}]',
  '{"name": "Best Dad Ever", "message": "Always by my side ❤️", "date": "2024"}'),
 
-('acrylic-lamp', 'lamps', 'LED Acrylic Lamps', 'Glowing Acrylic LED Night Lamp', 34.00, 5.0, 215, 'Trending 🔥', 'lamp',
+('acrylic-lamp', 'lamps', 'LED Acrylic Lamps', 'Glowing Acrylic LED Night Lamp', 999.00, 5.0, 215, 'Trending 🔥', 'lamp',
  'Crystal-clear acrylic plaque with soft warm LED illumination and custom laser etching.',
  'Turn your favorite photo into an enchanting warm night light. Precision laser-etched onto optical grade 5mm thick cast acrylic that slots into a solid beechwood LED pedestal.',
  '["5mm ultra-clear shatterproof cast acrylic plaque", "Solid beechwood base with hidden warm-white LED strip", "USB powered with inline on/off push button switch", "High-precision laser engraving that never fades or peels"]',
@@ -206,13 +206,13 @@ INSERT INTO `products` (`id`, `category_slug`, `category_name`, `name`, `price`,
 
 -- Seed Sample Order
 INSERT INTO `orders` (`id`, `user_id`, `customer_name`, `customer_email`, `customer_phone`, `shipping_address`, `shipping_city`, `shipping_zip`, `payment_method`, `payment_status`, `order_status`, `status_label`, `tracking_code`, `carrier`, `subtotal`, `tax`, `discount`, `total`, `timeline`) VALUES
-('ORD-98421', 'usr_demo_002', 'Sarah Jenkins', 'sarah@example.com', '+1 (555) 234-5678', '742 Evergreen Terrace', 'Springfield, OR', '97477', 'Credit Card (•••• 4242)', 'paid', 'in_production', 'In Production', 'FX-98421008-US', 'FedEx Express', 48.49, 3.88, 5.00, 47.37, 
+('ORD-98421', 'usr_demo_002', 'Sarah Jenkins', 'sarah@example.com', '+1 (555) 234-5678', '742 Evergreen Terrace', 'Springfield, OR', '97477', 'Credit Card (•••• 4242)', 'paid', 'in_production', 'In Production', 'FX-98421008-US', 'FedEx Express', 1398.00, 0.00, 0.00, 1398.00, 
 '[{"title": "Order Placed", "desc": "Custom gift specifications received and verified by design team.", "time": "Oct 18, 2026 - 10:15 AM", "done": true}, {"title": "Production & Laser Engraving", "desc": "Photo printing and precision laser calibration in workshop.", "time": "Oct 18, 2026 - 02:40 PM", "done": true}, {"title": "Handcrafted Quality Inspection", "desc": "Optical inspection for color accuracy, finish and packaging.", "time": "Estimated Today", "done": false}, {"title": "Handed to FedEx Express", "desc": "Tracking number FX-98421008-US active for dispatch.", "time": "Estimated Tomorrow", "done": false}, {"title": "Delivered to Sarah Jenkins", "desc": "Delivered to 742 Evergreen Terrace.", "time": "Estimated Oct 21", "done": false}]');
 
 -- Seed Sample Order Item
 INSERT INTO `order_items` (`order_id`, `product_id`, `product_name`, `price`, `quantity`, `color_name`, `custom_name`, `custom_message`, `custom_date`, `custom_font`, `custom_color`) VALUES
-('ORD-98421', 'ceramic-mug', 'Ceramic Keepsake Mug (11oz)', 18.99, 1, 'Pure White', 'Sophia & Liam', 'You make every morning brighter ☕', 'Est. Oct 2024', "'Playfair Display', serif", '#1E293B'),
-('ORD-98421', 'wooden-frame', 'Nordic Oak Tabletop Photo Frame', 29.50, 1, 'Natural Oak', 'The Henderson Family', 'Where life begins and love never ends ❤️', 'Summer 2024', "'Playfair Display', serif", '#1E293B');
+('ORD-98421', 'ceramic-mug', 'Ceramic Keepsake Mug (11oz)', 499.00, 1, 'Pure White', 'Sophia & Liam', 'You make every morning brighter ☕', 'Est. Oct 2024', "'Playfair Display', serif", '#1E293B'),
+('ORD-98421', 'wooden-frame', 'Nordic Oak Tabletop Photo Frame', 899.00, 1, 'Natural Oak', 'The Henderson Family', 'Where life begins and love never ends ❤️', 'Summer 2024', "'Playfair Display', serif", '#1E293B');
 
 -- Seed Reviews
 INSERT INTO `reviews` (`id`, `product_id`, `user_name`, `rating`, `verified`, `title`, `comment`, `created_at`) VALUES
