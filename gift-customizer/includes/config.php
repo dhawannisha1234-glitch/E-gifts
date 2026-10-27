@@ -16,10 +16,10 @@ require_once __DIR__ . '/db.php';
 define('APP_NAME', 'CraftGift Studio');
 define('APP_TAGLINE', 'Personalized Custom Gifts Made With Love');
 define('DATA_DIR', __DIR__ . '/../data');
-define('CURRENCY_SYMBOL', '₹');
+define('APP_CURRENCY', '₹');
 
 function format_price($amount, $decimals = 0) {
-    return CURRENCY_SYMBOL . number_format((float)$amount, $decimals);
+    return '₹' . number_format((float)$amount, $decimals);
 }
 
 // Ensure data folder exists
